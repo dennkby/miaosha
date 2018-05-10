@@ -20,7 +20,7 @@ public class UserController {
     @RequestMapping("/getUser")
     @ResponseBody
     public Result<User> getUserById(){
-        User user = userService.getUserById(1);
+        User user = userService.getById(1);
         String a= "";
         return Result.success(user);
     }
